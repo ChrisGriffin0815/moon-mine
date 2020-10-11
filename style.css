@@ -1,0 +1,25 @@
+body { min-height: 100vh; display: flex; flex-direction: column; }
+header{height: 20vh; } 
+main{flex-grow: 1;} 
+footer{height: 7vh; }
+
+.bgimage {
+  background-image: url(outer-space.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.round {
+  border-radius: 5px;
+}
+
+#moon {
+  border: none;
+  outline: none;
+  
+}

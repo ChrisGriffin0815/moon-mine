@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Mine</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body class="bgimage container-fluid">
+  <section>
+    <header class="row text-center justify-content-center mb-5 pb-5">
+      <h1 class="text-warning  "><b>MOON MINER</b></h1>
+    </header>
+    <main>
+      <div class="row mb-5 justify-content-around">
+        <div id="stats-display" class="col-3 justify-content-center text-warning text-center ">
+          <h3>RESOURCES</h3>
+          <div class=" bg-secondary round">
+            <h5 id="cheese-count"></h5>
+            <h5 id="knife-count"></h5>
+            <h5 id="drill-count"></h5>
+            <h5 id="grater-count"></h5>
+            <h5 id="minion-count"></h5>
+          </div>
+        </div>
+        <div class="d-flex col-5 justify-content-center">
+          <input id="moon" type="image" class="img-fluid" src="moon.png" onclick="mineCheese()">
+        </div>
+        <div id="stats-display" class="col-3  border-warning flex justify-content-center text-warning">
+          <h3>BUY STUFF </h3>
+          <button id="knife-button" onclick="buyKnife()"
+            class="btn btn-secondary text-warning btn-rounded btn block btn-block" disabled="true"></button>
+          <button id="drill-button" onclick="buyDrill()"
+            class="btn btn-secondary text-warning btn-rounded btn block btn-block">DRILL</button>
+          <button id="grater-button" onclick="buyGrater()"
+            class="btn btn-secondary text-warning btn-rounded btn block btn-block">GRATER</button>
+          <button id="minion-button" onclick="buyMinion()"
+            class="btn btn-secondary text-warning btn-rounded btn block btn-block">MINION</button>
+        </div>
+      </div>
+
+      <div class="row text-warning text-center mt-5 pt-5">
+        <div class="col-12">
+          <h2>MOD VALUES</h2>
+        </div>
+      </div>
+      <div class="row text-warning text-center">
+        <div class="col-6">
+          <h5 id="knife-mod-display"></h5>
+        </div>
+        <div class="col-6">
+          <h5 id="drill-mod-display"></h5>
+        </div>
+        <div class="col-6">
+          <h5 id="grater-mod-display"></h5>
+        </div>
+        <div class="col-6">
+          <h5 id="minion-mod-display"></h5>
+        </div>
+      </div>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
